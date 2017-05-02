@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://clorofeel.quidmind.com/ServiceModel/RobotVideo" elementFormDefault="qualified" targetNamespace="http://clorofeel.quidmind.com/ServiceModel/RobotVideo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd2" namespace="http://clorofeel.quidmind.com/DataModel/RobotResult" />
+  <xs:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloRoFeel_Attente_WebRole" />
+  <xs:element name="SendLastPicture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="secureToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="positionBoussolle" type="xs:int" />
+        <xs:element minOccurs="0" name="pictureBase64" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendLastPictureResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastPicture">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastPictureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://clorofeel.quidmind.com/DataModel/RobotResult" minOccurs="0" name="GetLastPictureResult" nillable="true" type="q1:RobotResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastFaceRecognitionResult">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastFaceRecognitionResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CloRoFeel_Attente_WebRole" minOccurs="0" name="GetLastFaceRecognitionResultResult" nillable="true" type="q2:FaceRecognitionResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestMethod">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestMethodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestMethodResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

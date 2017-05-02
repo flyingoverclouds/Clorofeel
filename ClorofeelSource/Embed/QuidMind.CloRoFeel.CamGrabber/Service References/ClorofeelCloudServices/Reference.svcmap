@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a0680987-fda0-4b77-bb51-beaf841c82fa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:81/robotvideo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RobotVideo.wsdl" MetadataType="Wsdl" ID="e4217555-2a64-4bcf-9aa9-1894760e4736" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RobotVideo.xsd" MetadataType="Schema" ID="23381e02-2aea-4e5c-b451-1e585aec2710" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd1" />
+    <MetadataFile FileName="RobotVideo.disco" MetadataType="Disco" ID="e9af0e87-871b-4b13-bf96-7ed82e3fdc0d" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?disco" />
+    <MetadataFile FileName="RobotVideo1.wsdl" MetadataType="Wsdl" ID="ea2b0c21-7827-4fd1-9758-cc3e66ab3906" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?wsdl" />
+    <MetadataFile FileName="RobotVideo1.xsd" MetadataType="Schema" ID="a7b04403-4a26-472b-a305-12a30c1ac65c" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd2" />
+    <MetadataFile FileName="RobotVideo2.xsd" MetadataType="Schema" ID="dce4caf8-285e-4a16-bd25-8ab73ec974b8" SourceId="1" SourceUrl="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

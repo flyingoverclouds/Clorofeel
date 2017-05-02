@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FaceDetectionTestLuxand.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FaceCropLibApiKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">6ECDDB0D383705026222D0F2C152F73183D0075260FCC30E561C62C11491C6B952FE8256C6CF615760A7D36113E27B2241E95FD832487A1AB04B7B1BACC9BEC5</Value>
+    </Setting>
+    <Setting Name="ClorofeelCloudServicesUri" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://clorofeel.cloudapp.net/RobotVideo.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

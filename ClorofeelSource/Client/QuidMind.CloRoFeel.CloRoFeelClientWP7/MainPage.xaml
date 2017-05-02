@@ -1,0 +1,112 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="QuidMind.CloRoFeel.CloRoFeelClientWP7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="728" 
+    
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  
+    Orientation="Portrait"
+    shell:SystemTray.IsVisible="False"
+    xmlns:local="clr-namespace:QuidMind.CloRoFeel.CloRoFeelClientWP7"
+    xmlns:converter="clr-namespace:QuidMind.CloRoFeel.CloRoFeelClientWP7.Converter"
+    xmlns:unsupported="clr-namespace:Microsoft.Phone.Controls.Unsupported"
+    xmlns:tilt="clr-namespace:Microsoft.ControlTiltEffect"
+    tilt:TiltEffect.IsTiltEnabled="True"
+    >
+    <phone:PhoneApplicationPage.Resources>
+        <converter:BooleanToCollapsedConverter x:Key="BooleanToCollapsedConverter"/>
+        
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Quidmind / Innorobo 2011 Lyon" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="CloRoFeel" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Border  Width="120" Background="white" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right" CornerRadius="10" >
+            <Image Source="Images/QuidMind_Logo_v1.png"/>
+        </Border>
+
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            
+            <StackPanel>
+                <Border Margin="10" CornerRadius="10" BorderThickness="1.5" BorderBrush="DarkGray">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="informations Windows Phone:"  FontWeight="Bold"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="15,0,0,0"  Text="Device Name  : "/>
+                            <TextBlock Margin="15,0,0,0"  Text="{Binding DeviceName}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <!--<Button x:Name="butRegisterWindowsPhone7" Content="Se déclarer à CloRoFeel" Height="90" HorizontalAlignment="Left" Margin="9,6,0,0" VerticalAlignment="Top" Width="441" Click="butRegisterWindowsPhone7_Click"/>-->
+                <Border Margin="10" CornerRadius="10" BorderThickness="1.5" BorderBrush="DarkGray">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="informations CloRoFeel :"  FontWeight="Bold"/>
+                        <TextBlock Margin="15,0,0,0"  Text="Build : v0.1103.22.2240 - Innorobo 2011 build"/>
+                        <TextBlock Margin="15,0,0,0"  Text="Mode : Private"/>
+                    </StackPanel>
+                </Border>
+                <Grid>
+                    <Button x:Name="butViewerMode" Width="227" Click="butViewerMode_Click" HorizontalAlignment="Left" Margin="0,0,0,64">
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Text="Mode Test" TextWrapping="Wrap" />
+                    </Button>
+                    <Button Width="217" x:Name="butControllerMode" Click="butControllerMode_Click" Margin="233,0,6,64">
+                        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Text="Mode Pilotage" TextWrapping="Wrap" />
+                    </Button>
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <TextBlock Name="textBlock2" Text="Votre statut : " FontSize="24"/>
+                <TextBlock Name="textBlock1" Text="{Binding DeviceStatus}" FontWeight="Bold" Foreground="CadetBlue" FontSize="24"/>
+            </StackPanel>
+
+
+            <!--<Grid Background="#C0000000" x:Name="grdAccesLicences" Visibility="{Binding CguAccepted,Converter={StaticResource BooleanToCollapsedConverter}}" >
+                <Button Height="222" HorizontalAlignment="Left" Margin="56,241,0,0" x:Name="butOpenLicence" VerticalAlignment="Top" Width="327" Background="DarkRed" Click="butOpenLicence_Click">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="Vous devez consulter" HorizontalAlignment="Center"/>
+                            <TextBlock Text="puis accepter la" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Licence d'Utilisation." HorizontalAlignment="Center"/>
+                        <TextBlock Text="   "/>
+                        <TextBlock Text="Cliquez ici" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </Grid>-->
+        </Grid>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/dark/appbar.refresh.rest.png" Text="Refresh data"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/dark/loupe.png" Text="toto"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="A propos ..."/>
+                <shell:ApplicationBarMenuItem Text="(c) QuidMind 2011"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+  
+ 
+  
+
+</phone:PhoneApplicationPage>

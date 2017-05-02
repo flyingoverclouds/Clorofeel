@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E71ABE46-2699-403E-B7E8-ECDA8BBE8E05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuidMind.CloRoFeel.RobotServiceModule</RootNamespace>
+    <AssemblyName>QuidMind.CloRoFeel.RobotServiceModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ServiceBus, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RobotRemoteService.cs" />
+    <Compile Include="RobotServiceModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureData.cs" />
+    <Compile Include="ServoMotorDriver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\QuidMind.CloRoFeel.ServiceInterface\QuidMind.CloRoFeel.ServiceInterface.csproj">
+      <Project>{A9B84F4C-C21B-4588-B54A-63947172F81F}</Project>
+      <Name>QuidMind.CloRoFeel.ServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Embed\QuidMind.CloRoFeel.RoboardServiceInterface\QuidMind.CloRoFeel.RoboardServiceInterface.csproj">
+      <Project>{8C01E4F4-EC11-4599-87A6-CF84F720F0A8}</Project>
+      <Name>QuidMind.CloRoFeel.RoboardServiceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Embed\RoBoIO_DotNet\RoBoIO_DotNet.csproj">
+      <Project>{88D6D3D4-5033-46E6-95A0-716B7F8A131C}</Project>
+      <Name>RoBoIO_DotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QuidMind.CloRoFeel.CoreKernel\QuidMind.CloRoFeel.CoreKernel.csproj">
+      <Project>{FF6E35E2-6744-4C10-A749-CBD22A4AE937}</Project>
+      <Name>QuidMind.CloRoFeel.CoreKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy  "$(TargetDir)*" "$(SolutionDir)\EmbedV2\QuidMind.CloRoFeel.BootLoader\bin\Debug\Modules\RobotServiceModule" /Y /S /E /C</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

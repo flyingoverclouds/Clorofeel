@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuidMind.CloRoFeel.RoboardServiceModule.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Servo5_MinPulse" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="Servo5_MaxPulse" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">2400</Value>
+    </Setting>
+    <Setting Name="Servo6_MinPulse" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">400</Value>
+    </Setting>
+    <Setting Name="Servo6_MaxPulse" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">2400</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

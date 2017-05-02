@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="00c349be-15df-4efe-ba6f-641ca1c1ed41" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RobotVideo1.wsdl" MetadataType="Wsdl" ID="9293b098-20cd-4062-8185-3fbfe625cff5" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RobotVideo.xsd" MetadataType="Schema" ID="4e667794-b663-4f30-8947-2547f22a5180" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?xsd=xsd1" />
+    <MetadataFile FileName="RobotVideo1.xsd" MetadataType="Schema" ID="83f714ef-acae-44a4-930f-b58abbc8e18d" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?xsd=xsd0" />
+    <MetadataFile FileName="RobotVideo.wsdl" MetadataType="Wsdl" ID="573e1738-58b7-4e4b-984a-1b14ee878f61" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?wsdl" />
+    <MetadataFile FileName="RobotVideo2.xsd" MetadataType="Schema" ID="6307b4b3-6af4-44cb-b6b4-94424af9040d" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?xsd=xsd2" />
+    <MetadataFile FileName="RobotVideo3.xsd" MetadataType="Schema" ID="f16f7d16-359c-4d9a-aede-ceb363bfbd69" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?xsd=xsd3" />
+    <MetadataFile FileName="RobotVideo.disco" MetadataType="Disco" ID="d4b1a674-6ac0-4497-979e-0a9ddf284da1" SourceId="1" SourceUrl="http://localhost/CloRoFeel_Attente_WebRole/RobotVideo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

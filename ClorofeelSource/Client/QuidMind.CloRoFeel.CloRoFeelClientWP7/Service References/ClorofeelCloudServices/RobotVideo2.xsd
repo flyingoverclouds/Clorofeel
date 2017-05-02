@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://clorofeel.quidmind.com/DataModel/RobotResult" elementFormDefault="qualified" targetNamespace="http://clorofeel.quidmind.com/DataModel/RobotResult" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RobotResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Compass" type="xs:int" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusOk" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RobotResult" nillable="true" type="tns:RobotResult" />
+</xs:schema>

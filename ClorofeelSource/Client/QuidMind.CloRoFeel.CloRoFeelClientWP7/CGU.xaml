@@ -1,0 +1,70 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="QuidMind.CloRoFeel.CloRoFeelClientWP7.CGU"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    xmlns:tilt="clr-namespace:Microsoft.ControlTiltEffect"
+    tilt:TiltEffect.IsTiltEnabled="True"
+    >
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="CloRoFeel" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Licence" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Height="523">
+                <StackPanel Name="stackPanel1">
+                    <Border CornerRadius="30" Background="White" Margin="60,0,60,20">
+                        <Image Source="Images/QuidMind_Logo_v1.png" x:Name="imgQuidMind" MouseLeftButtonUp="imgQuidMind_MouseLeftButtonUp"/>
+                    </Border>
+                    <TextBlock TextWrapping="Wrap" Text="Ce logiciel gratuit a été réalisé par la société QuidMind dans le cadre des TechDays 2011 pour la session 'Robotique : Du servo au cerveau'."/>
+                    <TextBlock TextWrapping="Wrap" Text=" "/>
+                    <TextBlock TextWrapping="Wrap" Text="L'application CloRoFeel Remote ne sera pleinement fonctionelle que pendant les TechDays 2011 de Paris ( 8,9 et 10 février 2011)."/>
+                    <TextBlock TextWrapping="Wrap" Text=" "/>
+                    <TextBlock TextWrapping="Wrap" Text="L'utilisation de ce logiciel nécéssite un accès internet 'data' (wifi ou gsm/3G) et peut donc être générateur de couts financiers à votre charge, dépendant de votre opérateur ou fournisseur d'accès, de votre abonnement ou de votre position géographique."/>
+                    <TextBlock TextWrapping="Wrap" Text="Le Logiciel est fourni gratuitement, en l'état et sans garanties ni engagement de bon fonctionnement."/>
+                    <TextBlock TextWrapping="Wrap" Text="Le logiciel transmettra l'identifiant de votre téléphone à des fin des gestions des droits d'accès au robot CloRoFeel. Les données collectées seront détruites à l'issue des TechDays."/>
+                    <TextBlock TextWrapping="Wrap" Text=""/>
+                    <TextBlock TextWrapping="Wrap" Text="L'acceptation de ces conditions de fonctionnement et d'utilisation est requise. Dans le cas contraire, l'application n'effectuera aucun transfert de données et ne sera pas fonctionnelle."/>
+                    <TextBlock TextWrapping="Wrap" Text=" "/>
+                    <TextBlock TextWrapping="Wrap" Text="(c) QuidMind 2011"/>
+                    <TextBlock TextWrapping="Wrap" Text="(c) Nicolas CLERC 2011"/>
+                </StackPanel>
+            </ScrollViewer>
+            <Button Content="J'accepte" Height="72" HorizontalAlignment="Left" Margin="7,529,0,0" VerticalAlignment="Top" Width="222" x:Name="butAcceptCGU" Click="butAcceptCGU_Click" Background="DarkGreen"/>
+            <Button Content="Je refuse" Height="72" HorizontalAlignment="Left" Margin="234,529,0,0" VerticalAlignment="Top" Width="222" x:Name="butRefusCGU" Click="butRefusCGU_Click" Background="DarkRed"/>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://clorofeel.quidmind.com/ServiceModel/RobotVideo" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://clorofeel.quidmind.com/ServiceModel/RobotVideo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd0" namespace="http://clorofeel.quidmind.com/ServiceModel/RobotVideo" />
+      <xsd:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd2" namespace="http://clorofeel.quidmind.com/DataModel/RobotResult" />
+      <xsd:import schemaLocation="http://127.0.0.1:81/RobotVideo.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CloRoFeel_Attente_WebRole" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RobotVideo_SendLastPicture_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendLastPicture" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_SendLastPicture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendLastPictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_GetLastPicture_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPicture" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_GetLastPicture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastPictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_GetLastFaceRecognitionResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastFaceRecognitionResult" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_GetLastFaceRecognitionResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastFaceRecognitionResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_TestMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestMethod" />
+  </wsdl:message>
+  <wsdl:message name="RobotVideo_TestMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestMethodResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RobotVideo">
+    <wsdl:operation name="SendLastPicture">
+      <wsdl:input wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/SendLastPicture" message="tns:RobotVideo_SendLastPicture_InputMessage" />
+      <wsdl:output wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/SendLastPictureResponse" message="tns:RobotVideo_SendLastPicture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPicture">
+      <wsdl:input wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/GetLastPicture" message="tns:RobotVideo_GetLastPicture_InputMessage" />
+      <wsdl:output wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/GetLastPictureResponse" message="tns:RobotVideo_GetLastPicture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastFaceRecognitionResult">
+      <wsdl:input wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/GetLastFaceRecognitionResult" message="tns:RobotVideo_GetLastFaceRecognitionResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/GetLastFaceRecognitionResultResponse" message="tns:RobotVideo_GetLastFaceRecognitionResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestMethod">
+      <wsdl:input wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/TestMethod" message="tns:RobotVideo_TestMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://clorofeel.quidmind.com/ServiceModel/RobotVideo/RobotVideo/TestMethodResponse" message="tns:RobotVideo_TestMethod_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="CloRoFeel_Attente_WebRole.RobotVideo" CodeBehind="RobotVideo.svc.cs" %>

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_RobotVideo">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="../RobotVideo.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_RobotVideo"
+                contract="ClorofeelCloudServices.RobotVideo" name="CustomBinding_RobotVideo" />
+        </client>
+    </system.serviceModel>
+</configuration>

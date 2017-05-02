@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8d0171c2-ada3-4a3a-8724-bafd94ee1d99" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://clorofeel.cloudapp.net/RobotVideo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RobotVideo.xsd" MetadataType="Schema" ID="e4f917f1-c14c-48d7-80b6-1fc203c38876" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?xsd=xsd0" />
+    <MetadataFile FileName="RobotVideoService.wsdl" MetadataType="Wsdl" ID="f6a68149-4008-4d14-bb2b-efa7dc4055f0" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?wsdl" />
+    <MetadataFile FileName="RobotVideo.disco" MetadataType="Disco" ID="7d5ec655-1df1-448a-8d4e-9b84939ef83d" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?disco" />
+    <MetadataFile FileName="RobotVideo.wsdl" MetadataType="Wsdl" ID="e50051c3-674d-4eb1-b75a-a22df6f22612" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RobotVideo1.xsd" MetadataType="Schema" ID="bd533831-203d-4b16-ab54-7df5c641863e" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?xsd=xsd1" />
+    <MetadataFile FileName="RobotVideo2.xsd" MetadataType="Schema" ID="ba32db14-33ba-4f20-b8bc-d00142ebd8e2" SourceId="1" SourceUrl="http://clorofeel.cloudapp.net/RobotVideo.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

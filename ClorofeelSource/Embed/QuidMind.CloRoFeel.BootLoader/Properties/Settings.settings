@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuidMind.CloRoFeel.BootLoader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Exe1_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\RoboardHardwareService\QuidMind.CloRoFeel.RoboardServiceImplementation.exe</Value>
+    </Setting>
+    <Setting Name="Exe1_StartWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+    <Setting Name="Exe2_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\RobotService\QuidMind.CloRoFeel.RobotService.exe</Value>
+    </Setting>
+    <Setting Name="Exe3_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\CamGrabber\QuidMind.CloRoFeel.CamGrabber.exe</Value>
+    </Setting>
+    <Setting Name="Exe4_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Exe5_Path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Exe2_StartWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+    <Setting Name="Exe3_StartWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+    <Setting Name="Exe4_StartWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+    <Setting Name="Exe5_StartWait" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

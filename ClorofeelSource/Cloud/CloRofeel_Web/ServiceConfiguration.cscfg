@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CloRofeel_Web" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="CloRoFeel_Attente_WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="nclerc" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEBt0wbqkYbafTrVzVpJ4uG4wDQYJKoZIhvcNAQEBBQAEggEAO3EobjA2EoLGDvI0+3TW3L3olgL9G/ocjqYGvUjw2pjhpewXSmOHkxKOw0pIwtbIda1SwJEDhmEhO9jszJgOXBnmIFvfrYdFz60RXK0z7Kc+ehCi+sASgoLjDpvAuMWJAKwrwASO394fxSl9cT7/XbP26sJfcR1wc0pu6cE8OTeEFhGk7B2ch0ijPaJxWqJwkKhGKPO+lsAPAENz8OmCHzXqA3OfBCbYdlCm3j0e7bm4dUQK8d2g86IIHM7FemHQdI1F3hhKfWJqJsMX0Ps7dVzCdhpyyE+WEAMveCFdNnWl89wqjJA936BszMRKpdbARuT1O4SvGKoRtuO/8yXdyTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECCT3FNUHhL5YgBCOc84LNWfNAhcp1bQGBi5g" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-03-12T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=quidminddeploy;AccountKey=WWn9ohmJHf14zk4oLp0nGRT5zcO+njkdv0TLDHTlHP+RRMkK1jTp2Wd+U6Gw5JQm7iewHhPAQohOwFJx6QJCrQ==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="8168D14FA01A2C726AC1902BA81FD9342FAE400E" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

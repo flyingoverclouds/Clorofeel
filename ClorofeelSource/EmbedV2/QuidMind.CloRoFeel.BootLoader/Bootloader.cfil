@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BootLoader version="2.0">
+  <Modules folder="Modules\">
+    <Module name="LCD Manager" folder="LcdManagerModule\" assembly="QuidMind.CloRoFeel.LcdManagerModule.dll" class="QuidMind.CloRoFeel.LcdManager.LcdManagerModule" isPublic="True" settings="COM3"/>
+    <Module name="WebCam Grabber" folder="WebCamGrabberModule\" assembly="QuidMind.CloRoFeel.WebCamGrabberModule.dll" class="QuidMind.CloRoFeel.WebCamGrabber.WebCamGrabberModule" isPublic="True"/>
+    <Module name="RoboardHardwareService" folder="RoboardServiceModule\" assembly="QuidMind.CloRoFeel.RoboardServiceModule.dll" class="QuidMind.CloRoFeel.RoboardServices.RoboardServiceModule" isPublic="True"/>
+    <Module name="MFSensor" folder="MFSensorModule\" assembly="QuidMind.CloRoFeel.MFSensorModule.dll" class="QuidMind.CloRoFeel.MFSensor.MFSensorModule" isPublic="True" settings="COM4"/>
+    <Module name="RobotService" folder="RobotServiceModule\" assembly="QuidMind.CloRoFeel.RobotServiceModule.dll" class="QuidMind.CloRoFeel.RobotService.RobotServiceModule" isPublic="True"/>
+  </Modules>
+</BootLoader>
